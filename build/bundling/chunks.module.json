@@ -1,0 +1,341 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.44.2",
+  "hash": "d63a3fb06c6b96dc91b2",
+  "publicPath": "/static/",
+  "outputPath": "C:\\Users\\Joels\\Documents\\Atomic47\\LODE\\LODE Homepage\\frontity\\lode-corp\\build\\static",
+  "assetsByChunkName": {
+    "lode-corp": [
+      "lode-corp.module.js",
+      "lode-corp.1847eb1e51d78f6ba16d.hot-update.js"
+    ]
+  },
+  "assets": [
+    {
+      "name": "1847eb1e51d78f6ba16d.hot-update.json",
+      "size": 51,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "images/agx-coin-img.png",
+      "size": 147240,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/aux-coin-img.png",
+      "size": 166363,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/borderless-image.jpg",
+      "size": 414067,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/borderless-svg.png",
+      "size": 10427,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/distributed-svg.png",
+      "size": 8672,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/download-app-store.png",
+      "size": 4877,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/download-google-play.png",
+      "size": 4817,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/hero-background-mobile.jpg",
+      "size": 387818,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/hero-wallet-mobile.png",
+      "size": 254645,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/home-hero-bg.jpg",
+      "size": 393593,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/honest-money-img.png",
+      "size": 226530,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/instant-svg.png",
+      "size": 4519,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/l-markets-img.png",
+      "size": 1558885,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false,
+      "isOverSizeLimit": true
+    },
+    {
+      "name": "images/l-markets-logo.png",
+      "size": 3550,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/l-media-bg.jpg",
+      "size": 1414730,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false,
+      "isOverSizeLimit": true
+    },
+    {
+      "name": "images/l-media-logo.png",
+      "size": 3007,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/l-pay-card-mobile.jpg",
+      "size": 89926,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/l-pay-phone-image.png",
+      "size": 805975,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false,
+      "isOverSizeLimit": true
+    },
+    {
+      "name": "images/lcommunity.png",
+      "size": 376769,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/lcommunitylogo.png",
+      "size": 4527,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/lode-logo-white.png",
+      "size": 2934,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/lode-media-circle.jpg",
+      "size": 736213,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false,
+      "isOverSizeLimit": true
+    },
+    {
+      "name": "images/lode-token-img.png",
+      "size": 217588,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/lodepay-vc-img.png",
+      "size": 448180,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/logo.svg",
+      "size": 1801,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/lpay-logo.png",
+      "size": 2020,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/mobile-svg.png",
+      "size": 3201,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/play.svg",
+      "size": 2092,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/secure-svg.png",
+      "size": 4537,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/stable-svg.png",
+      "size": 4465,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/trio-background-circle.jpg",
+      "size": 470775,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "lode-corp.1847eb1e51d78f6ba16d.hot-update.js",
+      "size": 160539,
+      "chunks": [
+        "lode-corp"
+      ],
+      "chunkNames": [
+        "lode-corp"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "lode-corp.module.js",
+      "size": 6871409,
+      "chunks": [
+        "lode-corp"
+      ],
+      "chunkNames": [
+        "lode-corp"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "lode-corp": {
+      "chunks": [
+        "lode-corp"
+      ],
+      "assets": [
+        "lode-corp.module.js",
+        "lode-corp.1847eb1e51d78f6ba16d.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "lode-corp": {
+      "chunks": [
+        "lode-corp"
+      ],
+      "assets": [
+        "lode-corp.module.js",
+        "lode-corp.1847eb1e51d78f6ba16d.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": []
+}
