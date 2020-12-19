@@ -6,6 +6,10 @@ import './i18n';
 /* Images */
 import lodeLogo from "../img/lode-logo-white.png"
 
+/* Breakpoints */
+const breakpoints = [576, 768, 1320, 1720];
+const mq = breakpoints.map((bp) => `@media (max-width: ${bp}px)`);
+
 const Footer = ({ state }) => {
   const { t, i18n } = useTranslation();
   return ( 
@@ -182,6 +186,9 @@ font-family:'Rubik';
     }
   ${P} {
     font-size: 18px;
+  }
+  ${mq[1]} {
+      padding-left: 25px;
   }
 `;
 

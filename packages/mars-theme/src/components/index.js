@@ -4,7 +4,9 @@ import Switch from "@frontity/components/switch";
 import Title from "./title";
 import Footer from "./module-footer";
 import Chat from "./chat";
+import MarsLink from "./link"
 import PageError from "./page-error";
+import PageVC from "./page-vc";
 
 import PageHome from "./page-home";
 
@@ -21,7 +23,7 @@ const mq = breakpoints.map(
  * Theme is the root React component of our theme. The one we will export
  * in roots.
  */
-const Theme = ({ state }) => {
+const Theme = ({ actions, children, link, state }) => {
   // Get information about the current URL.
   const data = state.source.get(state.router.link); 
 
@@ -45,7 +47,10 @@ const Theme = ({ state }) => {
       on the type of URL we are in. */}
 
         <Switch>
-          <PageHome />
+          
+          
+          <PageHome path=""/>
+          <PageVC path="/test" />
         </Switch>
       <Footer />
       <Chat />

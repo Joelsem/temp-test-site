@@ -24,6 +24,7 @@
     "@frontity/wp-source": "^1.10.0",
     "@react-hook/media-query": "^1.1.1",
     "frontity": "^1.13.0",
+    "hookrouter": "^1.2.5",
     "i18next": "^19.8.4",
     "jquery": "^3.5.1",
     "jsdom": "^16.4.0",

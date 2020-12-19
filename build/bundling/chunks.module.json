@@ -2,26 +2,21 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.2",
-  "hash": "d63a3fb06c6b96dc91b2",
+  "hash": "91724dd4be1f24a7cb38",
   "publicPath": "/static/",
   "outputPath": "C:\\Users\\Joels\\Documents\\Atomic47\\LODE\\LODE Homepage\\frontity\\lode-corp\\build\\static",
   "assetsByChunkName": {
-    "lode-corp": [
-      "lode-corp.module.js",
-      "lode-corp.1847eb1e51d78f6ba16d.hot-update.js"
-    ]
+    "lode-corp": "lode-corp.module.js"
   },
   "assets": [
     {
-      "name": "1847eb1e51d78f6ba16d.hot-update.json",
-      "size": 51,
+      "name": "images/Lodepay-tiles.jpg",
+      "size": 516134,
       "chunks": [],
       "chunkNames": [],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
+      "info": {},
+      "emitted": false,
+      "isOverSizeLimit": true
     },
     {
       "name": "images/agx-coin-img.png",
@@ -40,6 +35,15 @@
       "emitted": false
     },
     {
+      "name": "images/background-future.jpg",
+      "size": 1656508,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false,
+      "isOverSizeLimit": true
+    },
+    {
       "name": "images/borderless-image.jpg",
       "size": 414067,
       "chunks": [],
@@ -54,6 +58,15 @@
       "chunkNames": [],
       "info": {},
       "emitted": false
+    },
+    {
+      "name": "images/checkout-image.png",
+      "size": 508507,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false,
+      "isOverSizeLimit": true
     },
     {
       "name": "images/distributed-svg.png",
@@ -106,6 +119,38 @@
     {
       "name": "images/honest-money-img.png",
       "size": 226530,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/icon-bars.png",
+      "size": 3157,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/icon-card.png",
+      "size": 3552,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/icon-global.png",
+      "size": 3426,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/icon-withdraw.png",
+      "size": 3521,
       "chunks": [],
       "chunkNames": [],
       "info": {},
@@ -236,6 +281,14 @@
       "emitted": false
     },
     {
+      "name": "images/market-tiles.png",
+      "size": 298824,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
       "name": "images/mobile-svg.png",
       "size": 3201,
       "chunks": [],
@@ -276,23 +329,17 @@
       "emitted": false
     },
     {
-      "name": "lode-corp.1847eb1e51d78f6ba16d.hot-update.js",
-      "size": 160539,
-      "chunks": [
-        "lode-corp"
-      ],
-      "chunkNames": [
-        "lode-corp"
-      ],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
+      "name": "images/vc-hero.jpg",
+      "size": 748228,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false,
+      "isOverSizeLimit": true
     },
     {
       "name": "lode-corp.module.js",
-      "size": 6871409,
+      "size": 7470208,
       "chunks": [
         "lode-corp"
       ],
@@ -300,7 +347,8 @@
         "lode-corp"
       ],
       "info": {},
-      "emitted": false
+      "emitted": false,
+      "isOverSizeLimit": true
     }
   ],
   "filteredAssets": 0,
@@ -310,8 +358,7 @@
         "lode-corp"
       ],
       "assets": [
-        "lode-corp.module.js",
-        "lode-corp.1847eb1e51d78f6ba16d.hot-update.js"
+        "lode-corp.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -323,8 +370,7 @@
         "lode-corp"
       ],
       "assets": [
-        "lode-corp.module.js",
-        "lode-corp.1847eb1e51d78f6ba16d.hot-update.js"
+        "lode-corp.module.js"
       ],
       "children": {},
       "childAssets": {}
