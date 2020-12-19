@@ -2,13 +2,27 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.2",
-  "hash": "91724dd4be1f24a7cb38",
+  "hash": "dc00f0c158025c7961ef",
   "publicPath": "/static/",
   "outputPath": "C:\\Users\\Joels\\Documents\\Atomic47\\LODE\\LODE Homepage\\frontity\\lode-corp\\build\\static",
   "assetsByChunkName": {
-    "lode-corp": "lode-corp.module.js"
+    "lode-corp": [
+      "lode-corp.module.js",
+      "lode-corp.1f9c9bb590c12d8a488a.hot-update.js"
+    ]
   },
   "assets": [
+    {
+      "name": "1f9c9bb590c12d8a488a.hot-update.json",
+      "size": 51,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
     {
       "name": "images/Lodepay-tiles.jpg",
       "size": 516134,
@@ -338,8 +352,23 @@
       "isOverSizeLimit": true
     },
     {
+      "name": "lode-corp.1f9c9bb590c12d8a488a.hot-update.js",
+      "size": 44283,
+      "chunks": [
+        "lode-corp"
+      ],
+      "chunkNames": [
+        "lode-corp"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
       "name": "lode-corp.module.js",
-      "size": 7470208,
+      "size": 7492803,
       "chunks": [
         "lode-corp"
       ],
@@ -347,8 +376,7 @@
         "lode-corp"
       ],
       "info": {},
-      "emitted": false,
-      "isOverSizeLimit": true
+      "emitted": false
     }
   ],
   "filteredAssets": 0,
@@ -358,7 +386,8 @@
         "lode-corp"
       ],
       "assets": [
-        "lode-corp.module.js"
+        "lode-corp.module.js",
+        "lode-corp.1f9c9bb590c12d8a488a.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -370,7 +399,8 @@
         "lode-corp"
       ],
       "assets": [
-        "lode-corp.module.js"
+        "lode-corp.module.js",
+        "lode-corp.1f9c9bb590c12d8a488a.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

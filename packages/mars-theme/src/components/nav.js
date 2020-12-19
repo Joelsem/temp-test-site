@@ -2,12 +2,18 @@ import React from "react";
 import { connect, styled } from "frontity";
 import Link from "./link";
 
+/* Breakpoints */
+const breakpoints = [576, 768, 1320, 1720];
+const mq = breakpoints.map(
+  bp => `@media (max-width: ${bp}px)`
+)
+
 /**
  * Navigation Component
  *
  * It renders the navigation links
  */
-const Nav = ({ state }) => (
+const Nav = ({ state }) => ( 
   <NavContainer>
     {state.theme.menu.map(([name, link]) => {
       // Check if the link matched the current page url
@@ -27,6 +33,9 @@ const Nav = ({ state }) => (
 export default connect(Nav);
 
 const NavContainer = styled.nav`
+  position: absolute;
+  right: 325px;
+  top: 80px;
   list-style: none;
   display: flex;
   width: 848px;
@@ -36,9 +45,11 @@ const NavContainer = styled.nav`
   margin: 0;
   overflow-x: auto;
   align-items: center;
-    justify-content: flex-end;
-
-  @media screen and (max-width: 560px) {
+  justify-content: flex-end;
+  ${mq[3]} {
+    right: 150px;
+  }
+  ${mq[2]} {
     display: none;
   }
 `;

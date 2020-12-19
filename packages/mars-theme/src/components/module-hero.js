@@ -58,7 +58,6 @@ const Header = ({ state }) => {
     <HeroContainer>
       <MenuContainer>
         <LodeLogo src={lodeLogo} className="logo" />
-        <Nav /> 
       </MenuContainer> 
     <Container>
       <Title>The <b>future</b> of money starts here</Title>
