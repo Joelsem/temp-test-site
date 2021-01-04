@@ -347,6 +347,10 @@ const LoadContainer = styled.div`
       max-width: 100%;
     }
   }
+  ${mq[0]} {
+    padding-left: 7%;
+    padding-right: 7%:
+  }
 `;
 
 const P = styled.p`
@@ -457,6 +461,10 @@ const CheckoutsContainer = styled.div`
       max-width: 100%;
     }
   }
+  ${mq[0]} {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
   
 `;
 
@@ -525,6 +533,10 @@ const SpendingContainer = styled.div`
       padding: 0;
     }
   }
+  ${mq[0]} {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
 `;
 
 
@@ -577,5 +589,8 @@ const FutureContainer = styled.div`
   }
   ${mq[1]} {
     padding-left: 25px;
+  }
+  ${mq[0]} {
+    padding-top: 100px;
   }
 `;

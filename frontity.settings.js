@@ -2,7 +2,7 @@ const settings = {
   "name": "lode-corp",
   "state": {
     "frontity": {
-      "url": "https://lode.one/",
+      "url": "",
       "title": "LODE One",
       "description": "Constructing the digital money of the future"
     }

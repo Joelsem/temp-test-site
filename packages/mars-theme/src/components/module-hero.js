@@ -29,9 +29,7 @@ const Header = ({ state }) => {
     return( 
       <MobileHeroContainer>
         <TextMobileWrapper>
-          <MobileMenu />
           <MenuContainer>
-            <LodeLogo src={lodeLogo} className="logo" />
           </MenuContainer> 
         
         <Container>
@@ -83,6 +81,31 @@ const Header = ({ state }) => {
 
 // Connect the Header component to get access to the `state` in it's `props`
 export default connect(Header);
+
+const Container = styled.div`
+  width: 848px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 24px;
+  color: #314452;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  ${mq[2]} {
+    padding: 0;
+  }
+`;
+
+const Title = styled.div`
+font-size: 70px;
+max-width: 600px;
+margin-top: 200px;
+${mq[2]} {
+  margin-top: 100px;
+  font-size: 60px;
+}
+`;
+
 
 const TextMobileWrapper = styled.div`
   padding-left: 100px;
@@ -194,6 +217,13 @@ const MobileHeroContainer = styled.div`
     background-position: 110px 100px;
     background-size: 800px auto;
   }
+  ${TextMobileWrapper} {
+    ${Container} {
+      ${Title} {
+        margin-top: 170px;
+      }
+    }
+  }
 `;
 
 const HeroContainer = styled.div`
@@ -271,29 +301,8 @@ const MenuButton = styled.button`
 
 `;
 
-const Container = styled.div`
-  width: 848px;
-  max-width: 100%;
-  box-sizing: border-box;
-  padding: 24px;
-  color: #314452;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  ${mq[2]} {
-    padding: 0;
-  }
-`;
 
-const Title = styled.div`
-font-size: 70px;
-max-width: 600px;
-margin-top: 200px;
-${mq[2]} {
-  margin-top: 100px;
-  font-size: 60px;
-}
-`;
+
 
 const Description = styled.h4`
   margin: 0;
