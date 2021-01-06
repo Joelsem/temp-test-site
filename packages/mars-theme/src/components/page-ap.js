@@ -11,7 +11,7 @@ import earningBg from "../img/earning-bg-2.jpg";
 import manageLeft from "../img/manage-left-image.png";
 import manageBottom from "../img/manage-large-image.png";
 import withdrawIcon from "../img/icon-withdraw.png";
-import lodepayTilesBg from "../img/Lodepay-tiles.jpg";
+import lodepayTilesBg from "../img/lodepay-tiles.jpg";
 import checkoutImage from "../img/checkout-image.png";
 import marketTiles from "../img/market-tiles.png";
 import largeCircleBg from "../img/trio-background-circle.jpg";

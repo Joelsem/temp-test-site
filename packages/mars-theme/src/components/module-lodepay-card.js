@@ -6,7 +6,7 @@ import DownloadButtons from "./download-buttons";
 import {useMediaQuery, useMediaQueries} from '@react-hook/media-query';
 
 /* Images */
-import lodepayCardImg from "../img/lodepay-vc-img.png";
+import lodepayCardImg from "/build/static/images/lodepay-vc-img.png";
 import lodepayMobileCard from "../img/l-pay-card-mobile.jpg";
 
 

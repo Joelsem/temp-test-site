@@ -11,7 +11,7 @@ import barsIcon from "../img/icon-bars.png";
 import cardIcon from "../img/icon-card.png";
 import globalIcon from "../img/icon-global.png";
 import withdrawIcon from "../img/icon-withdraw.png";
-import lodepayTilesBg from "../img/Lodepay-tiles.jpg";
+import lodepayTilesBg from "../img/lodepay-tiles.jpg";
 import checkoutImage from "../img/checkout-image.png";
 import marketTiles from "../img/market-tiles.png";
 import largeCircleBg from "../img/trio-background-circle.jpg";
