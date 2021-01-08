@@ -263,8 +263,8 @@ const HeroContainer = styled.div`
   ${mq[2]} {
     background-image: none;
     background: #f2f0f3;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
     ${DownloadText} {
       flex-direction: column;
       align-items: center;
@@ -349,7 +349,11 @@ const LoadContainer = styled.div`
   }
   ${mq[0]} {
     padding-left: 7%;
-    padding-right: 7%:
+    max-width: calc(100vw - 14%);
+    padding-right: 7%;
+    ${Title} {
+      font-size: 40px;
+    }
   }
 `;
 
@@ -514,7 +518,8 @@ const SpendingContainer = styled.div`
   ${mq[2]} {
     display: flex;
     flex-direction: column;
-    padding-left: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
     margin-top: 50px;
     text-align: center;
     & div { 
@@ -586,6 +591,9 @@ const FutureContainer = styled.div`
   & ${Row} > ${DownloadButton} {
     filter: brightness(2);
     margin-top: 20px;
+  }
+  ${mq[2]} {
+    padding-left: 100px;
   }
   ${mq[1]} {
     padding-left: 25px;

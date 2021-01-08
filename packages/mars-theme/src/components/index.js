@@ -157,6 +157,7 @@ const NavItem = styled.div`
   font-size: 0.9em;
   box-sizing: border-box;
   flex-shrink: 0;
+  cursor: pointer;
 
   & > a {
     display: inline-block;
@@ -169,14 +170,12 @@ const NavItem = styled.div`
     }
   }
 
+  &:hover {
+    border-bottom: 2px solid #314452;
+  }
+
   &:last-of-type {
     margin-right: 0;
-
-    &:after {
-      content: "";
-      display: inline-block;
-      width: 24px;
-    }
   }
 `;
 

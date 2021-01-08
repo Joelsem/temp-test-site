@@ -85,6 +85,8 @@ const LCommunityContainer = styled.div`
     ${mq[1]} {
       padding-left: 50px;
     }
+    ${mq[0]} {
+    }
   ${LeftImage} {
     width: auto;
     object-fit: contain;
@@ -92,6 +94,11 @@ const LCommunityContainer = styled.div`
     margin-right: 100px;
     ${mq[3]} {
       width: 600px;
+    }
+    ${mq[0]} {
+      width: 500px;
+      position: relative;
+      left: 30px;
     }
     
   ${mq[2]} {

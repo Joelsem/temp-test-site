@@ -4,79 +4,90 @@ import Link from "./link";
 import Nav from "./nav";
 import DownloadButtons from "./download-buttons";
 import MobileMenu from "./menu";
-import { useTranslation } from 'react-i18next';
-import {useMediaQuery, useMediaQueries} from '@react-hook/media-query';
-import './i18n';
+import { useTranslation } from "react-i18next";
+import MediaQuery from 'react-responsive'
+import "./i18n";
 
 /* Images */
-import lodeLogo from "../img/logo.svg"
-import homeHeroBg from "../img/home-hero-bg.jpg"
-import playSVG from "../img/play.svg"
-import heroBgMobile from "../img/hero-background-mobile.jpg"
-import heroAppMobile from "../img/hero-wallet-mobile.png"
+import lodeLogo from "../img/logo.svg";
+import homeHeroBg from "../img/home-hero-bg.jpg";
+import playSVG from "../img/play.svg";
+import heroBgMobile from "../img/hero-background-mobile.jpg";
+import heroAppMobile from "../img/hero-wallet-mobile.png";
 
 /* Breakpoints */
 const breakpoints = [576, 768, 1320, 1720];
-const mq = breakpoints.map(
-  bp => `@media (max-width: ${bp}px)`
-)
+const mq = breakpoints.map((bp) => `@media (max-width: ${bp}px)`);
 
 const Header = ({ state }) => {
   const { t, i18n } = useTranslation();
-  const mobileVw = useMediaQuery('only screen and (max-width: 1319px)')
-  if(mobileVw) { 
-    /* Mobile View */
-    return( 
-      <MobileHeroContainer>
-        <TextMobileWrapper>
-          <MenuContainer>
-          </MenuContainer> 
-        
-        <Container>
-          <Title>The <b>future</b> of money starts here</Title>
-          <P>Welcome to the birthplace of the <b>Honest Money Revolution.</b> Fueled by a global monetary system that empowers you with:</P>
-          <Pm>• {t("home.hero.sub1")}</Pm>
-          <Pm>• {t("home.hero.sub2")}</Pm>
-          <Pm>• {t("home.hero.sub3")}</Pm>
-          <Row>
-            <MarginTop>
-            <PrimaryButton>{t("home.hero.start")}</PrimaryButton>
-            <PlayButton><PlaySVG src={playSVG} /><PlayButtonLabel>{t("home.hero.videos")}</PlayButtonLabel><PlayButtonNotifications>3</PlayButtonNotifications></PlayButton>
-            </MarginTop>
-          </Row>
-        </Container>
-        </TextMobileWrapper>
-        <DownloadMobileWrapper>
+  /* Mobile View */
+  return (
+    <div>
+      <MediaQuery maxWidth={1319}>
+        <MobileHeroContainer>
+          <TextMobileWrapper>
+            <MenuContainer />
+            <Container>
+              <Title>
+                The <b>future</b> of money starts here
+              </Title>
+              <P>
+                Welcome to the birthplace of the <b>Honest Money Revolution.</b>{" "}
+                Fueled by a global monetary system that empowers you with:
+              </P>
+              <Pm>• {t("home.hero.sub1")}</Pm>
+              <Pm>• {t("home.hero.sub2")}</Pm>
+              <Pm>• {t("home.hero.sub3")}</Pm>
+              <Row>
+                <MarginTop>
+                  <PrimaryButton>{t("home.hero.start")}</PrimaryButton>
+                  <PlayButton>
+                    <PlaySVG src={playSVG} />
+                    <PlayButtonLabel>{t("home.hero.videos")}</PlayButtonLabel>
+                    <PlayButtonNotifications>3</PlayButtonNotifications>
+                  </PlayButton>
+                </MarginTop>
+              </Row>
+            </Container>
+          </TextMobileWrapper>
+          <DownloadMobileWrapper>
             <DownloadButtons />
           </DownloadMobileWrapper>
-      </MobileHeroContainer>
-    ) } else { 
-      /* Desktop View */
-      return( 
-    <HeroContainer>
-      <MenuContainer>
-        <LodeLogo src={lodeLogo} className="logo" />
-      </MenuContainer> 
-    <Container>
-      <Title>The <b>future</b> of money starts here</Title>
-      <P>Welcome to the birthplace of the <b>Honest Money Revolution.</b> Fueled by a global monetary system that empowers you with:</P>
-      <Pm>• {t("home.hero.sub1")}</Pm>
-      <Pm>• {t("home.hero.sub2")}</Pm>
-      <Pm>• {t("home.hero.sub3")}</Pm>
-      <Row>
-        <MarginTop>
-        <PrimaryButton>{t("home.hero.start")}</PrimaryButton>
-        <PlayButton><PlaySVG src={playSVG} /><PlayButtonLabel>{t("home.hero.videos")}</PlayButtonLabel><PlayButtonNotifications>3</PlayButtonNotifications></PlayButton>
-        </MarginTop>
-      </Row>
-      
-      <DownloadButtons />
-
-      
-    </Container>
-  </HeroContainer> ) };
-  
-
+        </MobileHeroContainer>
+      </MediaQuery>
+      <MediaQuery minWidth={1320}>
+        <HeroContainer>
+          <MenuContainer>
+            <LodeLogo src={lodeLogo} className="logo" />
+          </MenuContainer>
+          <Container>
+            <Title>
+              The <b>future</b> of money starts here
+            </Title>
+            <P>
+              Welcome to the birthplace of the <b>Honest Money Revolution.</b>{" "}
+              Fueled by a global monetary system that empowers you with:
+            </P>
+            <Pm>• {t("home.hero.sub1")}</Pm>
+            <Pm>• {t("home.hero.sub2")}</Pm>
+            <Pm>• {t("home.hero.sub3")}</Pm>
+            <Row>
+              <MarginTop>
+                <PrimaryButton>{t("home.hero.start")}</PrimaryButton>
+                <PlayButton>
+                  <PlaySVG src={playSVG} />
+                  <PlayButtonLabel>{t("home.hero.videos")}</PlayButtonLabel>
+                  <PlayButtonNotifications>3</PlayButtonNotifications>
+                </PlayButton>
+              </MarginTop>
+            </Row>
+            <DownloadButtons />
+          </Container>
+        </HeroContainer>
+      </MediaQuery>
+    </div>
+  );
 };
 
 // Connect the Header component to get access to the `state` in it's `props`
@@ -97,19 +108,18 @@ const Container = styled.div`
 `;
 
 const Title = styled.div`
-font-size: 70px;
-max-width: 600px;
-margin-top: 200px;
-${mq[2]} {
-  margin-top: 100px;
-  font-size: 60px;
-}
+  font-size: 70px;
+  max-width: 600px;
+  margin-top: 200px;
+  ${mq[2]} {
+    margin-top: 100px;
+    font-size: 60px;
+  }
 `;
-
 
 const TextMobileWrapper = styled.div`
   padding-left: 100px;
-  padding-right:100px;
+  padding-right: 100px;
   ${mq[1]} {
     padding-left: 50px;
     padding-right: 50px;
@@ -123,91 +133,80 @@ const P = styled.p`
 `;
 
 const Pm = styled.p`
-max-width: 590px;
+  max-width: 590px;
   font-size: 20px;
   line-height: 35px;
-margin: 0px;
+  margin: 0px;
 `;
 
 const PrimaryButton = styled.button`
-
-background: #36AAFF;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    padding: 18px 44px;
-    max-width: 200px;
-    font-weight: 500;
-    font-size: 20px;
-    box-shadow: 0px 20px 20px #48484860;
-    cursor: pointer;
-
+  background: #36aaff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 18px 44px;
+  max-width: 200px;
+  font-weight: 500;
+  font-size: 20px;
+  box-shadow: 0px 20px 20px #48484860;
+  cursor: pointer;
 `;
 
 const PlayButton = styled.button`
-
-border: none;
-border-radius: 30px;
-width: 60px;
-height: 60px;
-background: white;
-box-shadow: 0px 20px 20px #48484860;
-margin-left: 30px;
-position: relative;
-cursor: pointer;
-
+  border: none;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  background: white;
+  box-shadow: 0px 20px 20px #48484860;
+  margin-left: 30px;
+  position: relative;
+  cursor: pointer;
 `;
 
 const PlayButtonNotifications = styled.div`
-position:absolute;
-height: 20px;
-width: 20px;
-background: #36AAFF;
-top: 0;
-left: 0;
-border-radius: 30px;
-display: flex;
-justify-content: center;
-align-items: center;
-color: white;
-font-size: 12px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: #36aaff;
+  top: 0;
+  left: 0;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
 `;
 
 const PlayButtonLabel = styled.div`
-position: absolute;
-bottom: -25px;
-left: 5px;
-font-family: 'Rubik';
-    color: #777777;
-    font-weight: 500;
-    letter-spacing: 1px;
+  position: absolute;
+  bottom: -25px;
+  left: 5px;
+  font-family: "Rubik";
+  color: #777777;
+  font-weight: 500;
+  letter-spacing: 1px;
 `;
 
 const PlaySVG = styled.img`
-
-position:relative;
-left:2px;
-
+  position: relative;
+  left: 2px;
 `;
 
 const Row = styled.div`
-
-display: flex;
-
-
+  display: flex;
 `;
 
 const MarginTop = styled.div`
-
-margin-top: 30px;
-
+  margin-top: 30px;
 `;
 
 const MobileHeroContainer = styled.div`
   background-image: url(${heroBgMobile});
   background-position: 280px 0px;
   background-repeat: no-repeat;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 300;
   min-height: 1160px;
   ${Row} {
@@ -227,12 +226,12 @@ const MobileHeroContainer = styled.div`
 `;
 
 const HeroContainer = styled.div`
-  background-image:url(${homeHeroBg});
+  background-image: url(${homeHeroBg});
   padding-left: 375px;
   padding-right: 330px;
   background-position: 70% 100%;
   background-repeat: no-repeat;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 300;
   min-height: 1160px;
   ${mq[3]} {
@@ -249,7 +248,7 @@ const DownloadMobileWrapper = styled.div`
   background-repeat: no-repeat;
   background-position: -100px 0;
   margin-top: 100px;
-  display:flex;
+  display: flex;
   justify-content: flex-start;
   padding-right: 100px;
   padding-left: 500px;
@@ -293,19 +292,11 @@ const MenuContainer = styled.div`
   padding-top: 60px;
 `;
 
-const Menu = styled.div`
+const Menu = styled.div``;
 
-`;
-
-const MenuButton = styled.button`
-
-`;
-
-
-
+const MenuButton = styled.button``;
 
 const Description = styled.h4`
   margin: 0;
   color: rgba(255, 255, 255, 0.7);
 `;
-

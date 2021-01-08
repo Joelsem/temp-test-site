@@ -64,7 +64,7 @@ const resources = {
             "home.hero.agxprice": "AGX price in grams of silver",
             "home.foru.header": "Borderless digital assets made for you.",
             "home.foru.sub": "LODE is constructing the most trusted and secure blockchain-powered gold and silver money system. Created by the people, for the people.",
-            "home.foru.switch": "Switch Today!",
+            "home.foru.switch": "Try Honest Money Today!",
             "home.3.lode": "LODE Token",
             "home.3.lode1": "Your digital receipt for gold/silver that has been contributed to the LODE reserves. Contributors receive micro-payouts of newly minted Coins for participation in the community as it grows.",
             "home.3.lode2": "INVEST IN LODE",

@@ -125,6 +125,7 @@ const LodePayContainer = styled.div`
       padding-right: 50px;
     }
     ${Title} {
+      flex-basis: 26%;
       ${mq[1]} {
         font-size: 40px;
       }

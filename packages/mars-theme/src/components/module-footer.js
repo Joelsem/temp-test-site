@@ -145,6 +145,9 @@ const MailForm = styled.input`
     &:focus {
         outline: none;
     }
+    ${mq[2]} {
+        width: 270px;
+    }
 `;
 
 const P = styled.p`
@@ -187,8 +190,41 @@ font-family:'Rubik';
   ${P} {
     font-size: 18px;
   }
+  ${mq[2]} {
+      padding-left: 50px;
+      padding-right: 50px;
+      ${MailFormContainer} {
+          font-size: 26px;
+      }
+      ${FooterCol} {
+          margin-right: 20px;
+      }
+  }
   ${mq[1]} {
       padding-left: 25px;
+      padding-top: 70px;
+      ${JustifyApart} {
+          flex-direction: column;
+      }
+      ${FlexCol} {
+          padding-bottom: 30px;
+      }
+      ${Logotext} {
+          display: none;
+      }
+      ${MailForm} {
+          margin-bottom: 30px;
+      }
+      ${FooterMenuList} {
+          flex-wrap: wrap;
+          ${FooterCol} {
+              flex-basis: 40%;
+              margin-bottom: 40px;
+          }
+      }
+  }
+  ${mq[0]} {
+
   }
 `;
 

@@ -379,7 +379,7 @@ const RewardedContainer = styled.div`
   }
 `;
 
-/* EarningContainer */
+/* Earning Container */
 
 const LargeBgImage = styled.img``;
 
@@ -487,6 +487,9 @@ const EarningContainer = styled.div`
   ${mq[0]} {
     padding-left: 7%;
     padding-right: 7%;
+    ${PrimaryButton} {
+      margin-bottom: 60px;
+    }
   }
 `;
 

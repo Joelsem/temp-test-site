@@ -556,8 +556,11 @@ const AGXContainer = styled.div`
     }
   }
   ${mq[2]} {
-    padding-left:330px;
-    margin-bottom:120px;
+    padding-left:350px;
+    margin-bottom:100px;
+    ${Title} {
+      margin-top: 100px;
+    }
     ${LeftImage} {
       top: -160px;
       max-width: 510px;
@@ -804,7 +807,7 @@ const HonestContainer = styled.div`
     }
     ${RightImage} {
       width: 65%;
-      right: -70px;
+      right: -100px;
       top: 220px;
     }
   }
@@ -829,6 +832,10 @@ const HonestContainer = styled.div`
     padding-right: 7%;
     ${RightImage} {
       right: -7%;
+      top: 100px;
+    }
+    ${Title} {
+      margin-top: 110px;
     }
   }
 `;
